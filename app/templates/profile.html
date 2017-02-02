@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block main %}
+<h1 class="page-header">Profile</h1>
+<img  style="width:350px; height:300px;" src="{{ url_for('static', filename='imgs/unicorn-121203.jpg')}}" class="img-thumbnail"/>
+<div class="panel panel-default" style="float:right; width:500px;">
+    <p class="panel-heading"><b>Keezia Allen</b></p>
+    <div class="panel-body">
+        <p>{{ date }}</p>
+        <hr>
+        <p><b>Username:</b> aizeek1</p>
+        <p><b>ID Number:</b>620076512</p>
+        <p><b>Age:</b> 1021</p>
+        <p><b>Gender:</b> Female</p>
+        <hr>
+        <p>I am a magical Unicorn. </p>
+    </div>
+</div>
+{% endblock %}
